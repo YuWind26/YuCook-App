@@ -1,0 +1,156 @@
+@media screen and (max-width: 650px) {
+  .burger{
+    display: block;
+  }
+  .nav {
+    background: rgba(82, 41, 3, 0.9);
+    position: fixed;
+    right: 0;
+    top: 70px;
+    width: 40%;
+    height: calc(100% - 70px);
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 400ms;
+    -webkit-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+  }
+
+  .navlink {
+    text-align: center;
+  }
+
+  .nav-active {
+    right: 0;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    position: fixed;
+  }
+
+  .navlink a {
+    color: rgb(223, 217, 217);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 1.0em;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .navlink a:hover {
+      cursor: pointer;
+      color: rgb(250, 248, 248);
+      font-weight: bolder;
+      text-decoration: underline;
+  }
+
+  .daftar-menu {
+    grid-row-gap: 16px;
+    grid-column-gap: 10px;
+  }
+
+  .item-rating {
+    font-size: 14px;
+  }
+
+  .item-content h4 {
+    font-size: 14px;
+  }
+
+  .item-description {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: relative;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    line-height: 40px;
+  }
+
+  .hero-text h1 {
+      font-size: 40px;
+      font-weight: 400;
+      letter-spacing: 5px;
+      line-height: 40px;
+  }
+
+  .hero-text p {
+      font-weight: 100;
+      letter-spacing: 3px;
+      font-size: 20px;
+      margin-top: 40px;
+  }
+
+  .hero-text button {
+      margin-top: 20px;
+      border: none;
+      outline: 0;
+      display: inline-block;
+      background-color: #f39c12;
+      padding: 20px;
+      border-radius: 55px;
+      text-align: center;
+      font-size: 15px;
+      opacity: 0.8;
+      cursor: pointer;
+      color: #fff;
+  }
+
+  .hero-text a {
+      padding: 13px 3px;
+  }
+
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(148, 101, 56, 0.9);
+    color: rgb(12, 12, 12);
+    text-align: center;
+    padding: 1.2em;
+    height: 70px;
+ }
+ 
+ .footer p{
+     text-align: center;
+     margin: 0 auto;
+     font-size: 20px;
+     font-family: "Roboto";
+     font-weight: bolder;
+ }
+}
+
+@media screen and (min-width: 700px) {
+  .daftar-menu {
+    display: grid;
+    grid-row-gap: 16px;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-text h1 {
+    padding-top: px;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 40px;
+}
+
+}
+
+@media screen and (min-width: 900px) {
+  .daftar-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+      max-width: 1200px;
+      font-size: 14px;
+  }
+}
